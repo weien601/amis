@@ -5,6 +5,8 @@ import makeSchemaRenderer from './SchemaRender';
 import IndexPageSchema from './Index';
 import ErrorPageSchema from './Page/Error';
 import FormPageSchema from './Page/Form';
+import FormErrorPageSchema from './Page/FormError';
+import FormErrorPageSchema2 from './Page/FormError2';
 import ModeFormSchema from './Form/Mode';
 import FieldSetFormSchema from './Form/FieldSet';
 import TabsFormSchema from './Form/Tabs';
@@ -161,6 +163,16 @@ export const examples = [
             label: '表单页面',
             path: '/examples/pages/form',
             component: makeSchemaRenderer(FormPageSchema)
+          },
+          {
+            label: '表单问题定位',
+            path: '/examples/pages/form1',
+            component: makeSchemaRenderer(FormErrorPageSchema)
+          },
+          {
+            label: '表单问题定位2',
+            path: '/examples/pages/form2',
+            component: makeSchemaRenderer(FormErrorPageSchema2)
           }
         ]
       },
